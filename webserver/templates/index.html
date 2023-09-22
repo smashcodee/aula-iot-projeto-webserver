@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+   <head>
+      <title>Webserver</title>
+      <link rel="stylesheet" href='../static/index.css'/>
+   </head>
+
+   <body>
+
+        <h2> Controle LED </h2>
+
+        <h3> RED LED ==>  {{ ledRed  }}  ==>  
+            {% if  ledRed   == 1 %}
+                <a href="/ledRed/off"class="button">TURN OFF</a>
+            {% else %}
+                <a href="/ledRed/on" class="button">TURN ON</a> 
+            {% endif %} 
+        </h3>
+
+   </body>
+</html>
